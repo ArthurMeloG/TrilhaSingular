@@ -17,13 +17,13 @@ public class Main {
 //        pf.createProduct(meuProduto);
 //        pf.createProduct(meuProduto2);
 
-        var result = pf.listAllProducts();
-        result.forEach(e -> System.out.println(e.toString()));
+//        var result = pf.listAllProducts();
+//        result.forEach(e -> System.out.println(e.toString()));
 
 //        User user = new User("Arthur");
 //        uf.createUser(user);
 //
-        var users = uf.listAllUsers();
-        users.forEach(u -> System.out.println(u.toString()));
+//        var users = uf.listAllUsers();
+//        users.forEach(u -> System.out.println(u.toString()));
     }
 }

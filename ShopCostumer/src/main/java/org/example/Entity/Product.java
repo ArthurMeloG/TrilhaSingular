@@ -1,9 +1,6 @@
 package org.example.Entity;
 
-import java.nio.channels.Pipe;
-import java.sql.Statement;
-
-public class Product {
+public class Product extends Entity {
 
     private Integer ID;
     private String name;
@@ -22,6 +19,10 @@ public class Product {
         this.name = name;
         this.price = price;
         this.amount = amount;
+    }
+
+    public Product() {
+
     }
 
     public String getName() {
@@ -64,4 +65,5 @@ public class Product {
             "Price: " + price + "\n" +
             "Amount: " + amount + "\n";
     }
+
 }

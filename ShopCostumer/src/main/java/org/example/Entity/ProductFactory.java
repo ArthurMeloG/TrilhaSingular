@@ -9,9 +9,13 @@ import java.util.List;
 
 public class ProductFactory implements Factory{
 
-    private Product product;
+    private final Product product = new Product();
 
     private final DB db = new DB();
+
+    public ProductFactory() {
+        super();
+    }
 
     public void createProduct(Product product) {
         String stringQuery = String.format(
@@ -24,8 +28,8 @@ public class ProductFactory implements Factory{
 //        List<Product> p = new ArrayList<>();
 //        String stringQuery = "SELECT * FROM Product";
 //        var result = db.execute(stringQuery, ProductFactory.this);
-//        List<Product> p = cas
-//        return result.get();
+//        result.get().get(0);
+////        return result.get();
 //    }
 
     public Product createDTO(ResultSet resultSet) throws SQLException {
@@ -39,8 +43,8 @@ public class ProductFactory implements Factory{
     }
 
 
-
-
-
-
+    @Override
+    public Class<? extends Entity> getClassEntity() {
+        return Product.class;
+    }
 }

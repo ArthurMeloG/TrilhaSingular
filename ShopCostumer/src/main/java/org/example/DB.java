@@ -3,6 +3,7 @@ package org.example;
 import org.example.Entity.Factory;
 import org.example.Entity.Product;
 
+import javax.swing.text.html.parser.Entity;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +14,8 @@ public class DB {
     private  String user = "postgres";
     private  String password = "postgrespw";
 
-    public <T> Optional<List<T>> execute(String query, Factory factory)  {
-        List<T> listResponse = new ArrayList<>();
+    public <T> Optional<List<Factory>> execute(String query, Factory factory) {
+        List<Factory> listResponse = new ArrayList<>();
         Optional<ResultSet> resultSet;
         try (Connection c = DriverManager.getConnection(url, user, password)) {
             Statement statement = c.createStatement();
@@ -22,7 +23,7 @@ public class DB {
 
             if(resultSet.isPresent()) {
                 while(resultSet.get().next()) {
-                    T responseModel = factory.createDTO(resultSet.get());
+                    Factory responseModel = factory.createDTO(resultSet.get());
                     listResponse.add(responseModel);
                 }
             }
