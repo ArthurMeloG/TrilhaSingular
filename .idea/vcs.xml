@@ -2,5 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Streams" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WicketApp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WicketSpring" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/demo" vcs="Git" />
   </component>
 </project>
