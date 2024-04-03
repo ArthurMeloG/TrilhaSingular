@@ -2,9 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JDBC" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JDBC-PG" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Streams" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tipagem" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/WicketApp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/WicketSpring" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/demo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/demo-dao-jdbc" vcs="Git" />
   </component>
 </project>
